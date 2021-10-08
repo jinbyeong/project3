@@ -7,8 +7,9 @@ def tomweather() :
     import numpy as np
     import os
     from dotenv import load_dotenv
-    load_dotenv()
-    weather_key = os.getenv('WEATHER_KEY')
+
+    load_dotenv()    
+    weather_key = os.environ.get('WEATHER_KEY')
     url = f'https://api.openweathermap.org/data/2.5/forecast?q=Seoul&appid={weather_key}&lang=kr'
     raw = requests.get(url)
     parsed = json.loads(raw.text)
