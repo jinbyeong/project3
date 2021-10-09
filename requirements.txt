@@ -69,3 +69,4 @@ Werkzeug==2.0.2
 widgetsnbextension==3.5.1
 wincertstore==0.2
 lightgbm==3.3.0
+psycopg2==2.9.1
