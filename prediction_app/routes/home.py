@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint, render_template, request
 from prediction_app.function.func import tomweather
 
 
@@ -8,5 +8,5 @@ homebp=Blueprint('home',__name__)
 def index() : 
     dic = tomweather()
     
-    return f"{dic}"
+    return render_template('home.html')
     
