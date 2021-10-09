@@ -1,1 +1,1 @@
-seoul-prediction.herokuapp.com
+https://seoul-prediction.herokuapp.com
