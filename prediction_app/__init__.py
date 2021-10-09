@@ -5,8 +5,8 @@ def create_app():
 
     
     from prediction_app.routes import home
-    app.register_blueprint(home)
-
+    app.register_blueprint(home.homebp)
+    
     return app
 
 if __name__=="__main__" :

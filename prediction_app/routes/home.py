@@ -2,11 +2,11 @@ from flask import Blueprint
 from prediction_app.function.func import tomweather
 
 
-bp=Blueprint('home',__name__,url_prefix='/home')
+homebp=Blueprint('home',__name__)
 
-@bp.route('/')
+@homebp.route('/')
 def index() : 
     dic = tomweather()
     
-    return f"{dic['temp']}"
+    return f"{dic}"
     
