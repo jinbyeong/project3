@@ -1,8 +1,9 @@
 <html>
    <body>
    
-      <form action = '/result' method = "POST">
-         <p><input type = "submit" value = "내일 예측" /></p>
+      <form name = "data" action = '/result' method = "POST">
+        <p>휴일<input type = "radio" value = 1 name = "holiday"/>평일<input type = "radio" value = 0 name = "holiday"/></p>
+        <p><input type = "submit" value = "예측 시작" /></p>
       </form>
       
    </body>
