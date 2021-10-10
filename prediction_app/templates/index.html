@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+	<title>home</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header id="header" class="alt">
+		<div class="logo"><a href="/">서울대공원 <span>방문자 예측</span></a></div>
+		<a href="#menu">Menu</a>
+	</header>
+
+	<!-- Nav -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="/">Home</a></li>
+		</ul>
+	</nav>
+
+	<!-- Banner -->
+	<section class="banner full">
+		<article>
+			<img src="{{ url_for('static', filename='images/img1.jpg') }}" alt="" />
+			<div class="inner">
+				<header>
+					<p><a href="https://grandpark.seoul.go.kr/main/ko.do#page1"> Seoul Grandpark</a></p>
+					<h2>Visit Prediction</h2>
+				</header>
+			</div>
+		</article>
+		<article>
+			<img src="{{ url_for('static', filename='images/img2.jpg') }}" alt="" />
+			<div class="inner">
+				<header>
+					<p><a href="https://grandpark.seoul.go.kr/main/ko.do#page1"> Seoul Grandpark</a></p>
+					<h2>Visit Prediction</h2>
+				</header>
+			</div>
+		</article>
+		<article>
+			<img src="{{ url_for('static', filename='images/img3.jpg') }}" alt="" />
+			<div class="inner">
+				<header>
+					<p><a href="https://grandpark.seoul.go.kr/main/ko.do#page1"> Seoul Grandpark</a></p>
+					<h2>Visit Prediction</h2>
+				</header>
+			</div>
+		</article>
+		<article>
+			<img src="{{ url_for('static', filename='images/img4.jpg') }}" alt="" />
+			<div class="inner">
+				<header>
+					<p><a href="https://grandpark.seoul.go.kr/main/ko.do#page1"> Seoul Grandpark</a></p>
+					<h2>Visit Prediction</h2>
+				</header>
+			</div>
+		</article>
+		<article>
+			<img src="{{ url_for('static', filename='images/img5.jpg') }}" alt="" />
+			<div class="inner">
+				<header>
+					<p><a href="https://grandpark.seoul.go.kr/main/ko.do#page1"> Seoul Grandpark</a></p>
+					<h2>Visit Prediction</h2>
+				</header>
+			</div>
+		</article>
+	</section>
+
+	<!-- One -->
+	<section id="one" class="wrapper style2">
+		<div class="inner">
+			<div>
+
+
+				<div>
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<p>Is tomorrow a holiday?</p>
+								<h2>Choose a button</h2>
+							</header>
+
+							<div class="content">
+								<form name="data" action='/result' method="POST" style="text-align: center;">
+									<div>
+										<div >
+											<input type="radio" id="priority-low" name="holiday" value=0 checked>
+											<label for="priority-low">평일</label>
+										</div>
+										<div >
+											<input type="radio" id="priority-normal" name="holiday" value=1>
+											<label for="priority-normal">휴일</label>
+										</div>
+										<br>
+										<div>
+											<button class="button" type="submit">Submit</button>
+										</div>
+									</div>
+									
+							</div>
+						</div>
+						</form>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+		</div>
+		</div>
+	</section>
+
+	<!-- Two -->
+	<section id="two" class="wrapper style3">
+		<div class="inner">
+			<header class="align-center">
+				<p>codestates section3</p>
+				<h2>project</h2>
+			</header>
+		</div>
+	</section>
+
+	<!-- Three -->
+	<section id="three" class="wrapper style2">
+		<div class="inner">
+			<header class="align-center">
+				<p class="special">Various pictures of Seoul Grand Park</p>
+				<h2>Hope you to visit</h2>
+			</header>
+			<div class="gallery">
+				<div>
+					<div class="image fit">
+						<a href="#"><img src="{{ url_for('static', filename='images/img1.jpg') }}" alt="" /></a>
+					</div>
+				</div>
+				<div>
+					<div class="image fit">
+						<a href="#"><img src="{{ url_for('static', filename='images/img2.jpg') }}" alt="" /></a>
+					</div>
+				</div>
+				<div>
+					<div class="image fit">
+						<a href="#"><img src="{{ url_for('static', filename='images/img3.jpg') }}" alt="" /></a>
+					</div>
+				</div>
+				<div>
+					<div class="image fit">
+						<a href="#"><img src="{{ url_for('static', filename='images/img4.jpg') }}" alt="" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Footer -->
+	<footer id="footer">
+		
+		<div class="copyright">
+			&copy; Untitled. All rights reserved.
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/skel.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+</body>
+
+</html>

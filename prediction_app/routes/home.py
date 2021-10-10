@@ -4,9 +4,9 @@ from prediction_app.function.func import tomweather
 
 homebp=Blueprint('home',__name__)
 
-@homebp.route('/')
+@homebp.route('/',methods = ['GET','POST'])
 def index() : 
     dic = tomweather()
     
-    return render_template('home.html')
+    return render_template('index.html')
     

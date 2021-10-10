@@ -1,32 +1,83 @@
-<html lang="kr">
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
 
 <head>
-<title>result</title>
-
+	<title>result</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
 </head>
 
-<body >
-    <div style="height: 100px; background-color: white;">
+<body class="subpage">
 
+	<!-- Header -->
+	<header id="header">
+		<div class="logo"><a href="/">서울대공원 <span>방문자 예측</span></a></div>
+		<a href="#menu">Menu</a>
+	</header>
 
-        <br><br><br>
+	<!-- Nav -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="/">Home</a></li>
+		</ul>
+	</nav>
 
+	<!-- One -->
+	<section id="One" class="wrapper style3">
+		<div class="inner">
+			<header class="align-center">
+				<p>SEOUL GRANDPARK</p>
+				<h2>Visit Prediction</h2>
+			</header>
+		</div>
+	</section>
 
+	<!-- Two -->
+	<section id="two" class="wrapper style2">
+		<div class="inner">
+			<div class="box">
+				<div class="content">
+					<header class="align-center">
+						<p>LightGBM</p>
+						<h2>Regression</h2>
+					</header>
+					<br><br><br><br><br>
+					<div style="text-align: center;"><h1 style="font-size: xx-large;"><strong>{{prediction}}명 방문이 예상 됩니다.</strong></h1></div>
+					<br><br><br><br><br>
+					
+				</div>
+			</div>
+		</div>
+	</section>
 
-    </div>
-    <div style="height: 400px; background-color: rgb(121, 174, 184); text-align: center; text-emphasis-color: white;">
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="container">
+			<ul class="icons">
+				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+			</ul>
+		</div>
+		<div class="copyright">
+			&copy; Untitled. All rights reserved.
+		</div>
+	</footer>
 
+	<!-- Scripts -->
+	<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/skel.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
 
-        <br><br><br>
-        <h2 style="font-size: xx-large; color: white;">내일은 {{prediction}}명이 방문할 것으로 예측됩니다.</h2>
-<div style="height: 100px;"></div>
-        
-    </div>
-    <div style="align-content: center ;text-align: center;">
-        
-        
-
-    </div>
 </body>
 
 </html>
